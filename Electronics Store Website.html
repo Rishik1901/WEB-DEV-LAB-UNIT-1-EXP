@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ElectroStore</title>
+<link rel="stylesheet" href="Electronics Store Website.css">
+</head>
+<body>
+<header>
+<h1>ElectroStore</h1>
+<p>Your One-Stop Electronics Shop</p>
+<nav><a href="#home">Home</a> <a href="#products">Products</a> <a href="#compare">Compare</a></nav>
+</header>
+<section class="hero" id="home">
+<h2>Latest Electronics at Best Prices</h2>
+<p>Discover laptops, smartphones and smart devices.</p>
+</section>
+<section id="products">
+<h2>Our Products</h2>
+<div class="categories">
+<button onclick="show('all')">All</button>
+<button onclick="show('laptop')">Laptops</button>
+<button onclick="show('phone')">Phones</button>
+<button onclick="show('accessory')">Accessories</button>
+</div>
+<div class="products">
+<div class="card laptop">
+<span class="discount">20% OFF</span>
+<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400" alt="Laptop">
+<h3>Pro Laptop</h3><p>16GB RAM | 512GB SSD</p><p>₹59,999</p>
+</div>
+<div class="card phone">
+<span class="discount">15% OFF</span>
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400" alt="Smartphone">
+<h3>Smart Phone</h3><p>8GB RAM | 128GB Storage</p><p>₹24,999</p>
+</div>
+<div class="card accessory">
+<span class="discount">10% OFF</span>
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400" alt="Headphones">
+<h3>Headphones</h3><p>Wireless | Bluetooth</p><p>₹1,999</p>
+</div>
+</div>
+</section>
+<section id="compare">
+<h2>Product Comparison</h2>
+<table><tr><th>Product</th><th>RAM</th><th>Price</th></tr>
+<tr><td>Laptop</td><td>16GB</td><td>₹59,999</td></tr>
+<tr><td>Phone</td><td>8GB</td><td>₹24,999</td></tr>
+</table>
+</section>
+<footer><p>© 2026 ElectroStore | Student Project</p></footer>
+<script>
+function show(c){document.querySelectorAll('.card').forEach(p=>p.style.display=c==='all'||p.classList.contains(c)?'block':'none');}
+</script>
+</body>
+</html>
